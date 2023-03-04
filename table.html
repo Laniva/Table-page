@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A table</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                margin: 0;
+                font-family: 'Poppins', sans-serif;
+            }
+            .main{
+                border: rgb(128, 126, 126) solid;
+                margin-left: 365px;
+                margin-right: 355px;
+                margin-top: 73px;
+               
+            }
+            .main div p{
+                font-size: 18px;
+                
+            }
+            .link{
+                background-color: rgb(6, 1, 27);
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                height: 40px;
+                padding: 10px;
+            }
+            .link a{
+                text-decoration: none;
+                color: white;
+                padding: 15px;
+            }
+            .head-2{
+                margin-bottom: 20px;
+            }
+            table{
+                border-collapse: collapse;
+                width: 97%;
+                margin-left: 9px;
+                margin-right: 3px;
+            }
+            .tr{
+                background-color: rgb(226, 225, 225);
+            }
+            td, th{
+                padding: 8px;
+                font-size: 18px;
+            }
+            .bord{
+                border-bottom: rgb(6, 1, 27) double;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+         <div>
+           <h1 style="margin-left: 14px;">Balance Sheet</h1>
+           <p style="margin-left: 14px;"><b>AcmeWidgetCorp</b></p>
+         </div>
+         <div class="link">
+            <a href="#">2019</a>
+            <a href="#">2020</a>
+            <a href="#">2021</a>
+         </div>
+         <div class="head-2">
+            <p style="color: rgb(11, 146, 180); margin-left: 14px; font-size: 20px;"><b>Assets</b></p>
+            <table>
+                <tr class="tr">
+                    <th style="text-align: left;">Cash</th>
+                    <td>$25</td>
+                    <td>$30</td>
+                    <td>$28</td>
+                </tr>
+                <tr>
+                    <td><em>This is the cash we currently have on hand.</em></td>
+                </tr>
+                <tr class="tr">
+                    <th style="text-align: left;">checking</th>
+                    <td>$54</td>
+                    <td>$30</td>
+                    <td>$28</td>
+                </tr>
+                <tr>
+                    <td><em>Our primary transactional account.</em></td>
+                </tr>
+                <tr class="tr">
+                    <th style="text-align: left;">Savings</th>
+                    <td>$500</td>
+                    <td>$650</td>
+                    <td>$728</td>
+                </tr>
+                <tr>
+                    <td><em>Funds set aside for emergencies.</em></td>
+                </tr>
+                <tr class="bord">
+                    <th style="text-align: left;">Total</th>
+                    <th>$579</th>
+                    <th>$736</th>
+                    <th>$809</th>
+                </tr>
+            </table>
+         </div>
+        </div>
+    </body>
+</html>
